@@ -1,0 +1,12 @@
+.Main-block2__text{
+    display: flex;
+    background-color: grey;
+    border-radius: 8px;
+}
+.block2__text1, .block2__text2 {
+    transition: background-color 0.5s ease;
+    font: 400 20px bold;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+  }

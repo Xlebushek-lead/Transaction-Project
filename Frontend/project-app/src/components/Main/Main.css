@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Main-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    padding: 100px 0 0 100px;    
+}
+.Main-text{
+    font: 400 20px bold;
+    margin-bottom: 20px;
+}
+.Main-block1{
+    margin-right: 300px
+}
+.Main-block2{
+    
+}
