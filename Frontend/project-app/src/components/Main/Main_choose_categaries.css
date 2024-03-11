@@ -1,0 +1,34 @@
+
+.alert_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.categaries{
+    border: 2px solid teal;
+    border-radius: 8px;
+    box-shadow: rgb(0,0,0.25);
+    padding: 20px;
+}
+.Title{
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.categaries_block{
+    display: flex;
+    list-style: none;
+    width: auto;
+}
+
+.categaries_block li{
+    margin-right: 10px;
+}.categaries_block > li:last-child{
+    margin: 0;
+}
+.Maxin-sendMoney__text{
+    text-decoration: none;
+    border: none;
+    color: black
+}

@@ -1,0 +1,43 @@
+.Billings-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Billings-info__block{
+    border: 2px solid teal;
+    padding: 30px;
+    width: 500px;
+}
+.Billings-title{
+    font:400 50px 'Arial';  
+    text-align: center;
+}
+.Billings-balance{
+    text-align: center;
+    font:400 30px 'Arial';  
+}
+.Billings-text__balance {
+    font:400 15px 'Arial';
+    text-align: center;
+}
+.Billings-button__block{
+    display: flex;
+    justify-content: center;
+}
+.Billings-title ,.Billings-balance,.Wallets-block,.Billings-text__balance{
+    margin-bottom: 10px;
+}
+.Billings-button{
+    font:400 15px 'Arial';
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+.Wallets-block{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 5px;
+    align-items: center;
+    border: 2px solid teal;   
+}

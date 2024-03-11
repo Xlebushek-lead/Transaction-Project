@@ -18,8 +18,8 @@ function Main_click_button() {
 
   return (
     <div className="Main-block2__text"> 
-        <p className="block2__text1" onClick={handleElementClick1} style={{ backgroundColor: backgroundColor1 }}>Витрати </p>;
-        <p className="block2__text2" onClick={handleElementClick2} style={{ backgroundColor: backgroundColor2 }}>Доходи</p>;
+        <p className="block2__text1" onClick={handleElementClick1} style={{ backgroundColor: backgroundColor1 }}>Витрати </p>
+        <p className="block2__text2" onClick={handleElementClick2} style={{ backgroundColor: backgroundColor2 }}>Доходи</p>
     </div>   
   );
 }

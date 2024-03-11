@@ -1,0 +1,52 @@
+.Billings_change_money-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Billings_change_money-info__block{
+    border: 2px solid teal;
+    padding: 30px;
+    width: 500px;
+}
+.Billings_change_money-title{
+    font:400 50px 'Arial';  
+    text-align: center;
+}
+.Billings_change_money-balance{
+    text-align: center;
+    font:400 30px 'Arial';  
+}
+.Billings_change_money-text__balance {
+    font:400 15px 'Arial';
+    text-align: center;
+}
+.Billings_change_money-button__block{
+    display: flex;
+    justify-content: center;
+}
+.Billings_change_money-title ,.Billings_change_money-balance,.Wallets-block,.Billings_change_money-text__balance{
+    margin-bottom: 10px;
+}
+.Billings_change_money-button{
+    font:400 15px 'Arial';
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+.Wallets-block{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 5px;
+    align-items: center;
+    border: 2px solid teal;   
+}
+.Billings_change_money-money{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.Billings_change_money-change{
+    padding: 5px;
+    font:400 15px 'Arial';
+}

@@ -2,6 +2,7 @@
     display: flex;
     background-color: grey;
     border-radius: 8px;
+    margin-bottom: 30px;
 }
 .block2__text1, .block2__text2 {
     transition: background-color 0.5s ease;

@@ -17,3 +17,32 @@
 .Main-block1{
     margin-right: 300px
 }
+.Main-money__text{
+    font-size: 30px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.Main-money__dolar{
+    width: fit-content;
+    font-size: 30px;
+}
+.Main-money__block{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.Main-sendMoney{
+    display: flex;
+    justify-content: center;
+}
+.Main-sendMoney__text{
+    font: 400 20px bold;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    
+   
+}
