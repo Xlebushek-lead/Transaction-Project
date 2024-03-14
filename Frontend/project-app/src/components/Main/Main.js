@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '/Web/WEB-PROJECT/Transaction-Project-2/Frontend/project-app/src/reset.css';
+import 'D:/Transaction-Project/Frontend/project-app/src/reset.css';
 import "./Main.css";
 import Billings_menu from '../Billings/Billings_menu';
 import Main_click_button from './Main_click_button';
