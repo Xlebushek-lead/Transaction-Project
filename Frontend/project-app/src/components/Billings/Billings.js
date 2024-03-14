@@ -5,12 +5,12 @@ import { Router ,Routes, Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './Billings.css'
 
-function Billings() {
+function Billings(props) {
   return (
     <div className="Billings-container">
       <div className='Billings-info__block'>
         <div className='Billings-title'>Рахунки</div>
-        <div className='Billings-balance'>45445$</div>
+        <div className='Billings-balance'>{props.balance}$</div>
         <div className='Billings-text__balance'>Загальний баланс</div>
         <div className='Wallets-block'>
           <div className='Wallets-name'><Link to='/Wallets-name' className='Main-sendMoney__text'>Гроші</Link></div>

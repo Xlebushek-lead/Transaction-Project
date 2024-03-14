@@ -16,7 +16,7 @@ function App() {
         <Route path="/Wallets-name" element={<Billings_menu/>}/>
         <Route path="/WalletsMenu-name" element={<Billings_change_money/>}/>
         <Route path="/WalletsMenu-name2" element={<Main/>}/>
-      </Routes>WalletsMenu-name2
+      </Routes>
     </BrowserRouter>
     
    

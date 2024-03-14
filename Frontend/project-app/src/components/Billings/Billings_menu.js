@@ -7,14 +7,14 @@ import './Billings_menu.css'
 import Billings_change_money from './Billings_change_money';
 
 
-function Billings_menu() {
-  
+function Billings_menu(props) {
+
   
   return (
     <div className="BillingsMenu-container">
       <div className='BillingsMenu-info__block'>
         <div className='BillingsMenu-title'>Рахунки</div>
-        <div className='BillingsMenu-balance'>4343$</div>
+        <div className='BillingsMenu-balance'>{props.balance}</div>
         <div className='BillingsMenu-text__balance'>Загальний баланс</div>
         <div className='WalletsMenu-block'>
           <div className='WalletsMenu-name'><Link to='/WalletsMenu-name' className='Main-sendMoney__text1'>Змінити <br/>баланс</Link></div>
@@ -36,8 +36,6 @@ function Billings_menu() {
                 </div>
             </div>
         </div>
-       
-       
       </div>
     </div>
   );
