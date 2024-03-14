@@ -12,14 +12,15 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Main/>} />
-        <Route path="/second-page" element={<Main_choose_categaries />}/>
-        <Route path="/other" element={<Main/>}/>
-        <Route path="/billing-nav" element={<Billings/>}/>
-        <Route path="/Wallets-name" element={<Billings_menu/>}/>
-        <Route path="/WalletsMenu-name" element={<Billings_change_money/>}/>
-        <Route path="/WalletsMenu-name2" element={<Main/>}/>
-      </Routes>WalletsMenu-name2
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/SignPage" element={<SignUpFormComponent />} />
+        <Route path="/second-page" element={<Main_choose_categaries />} />
+        <Route path="/other" element={<Main />} />
+        <Route path="/billing-nav" element={<Billings />} />
+        <Route path="/Wallets-name" element={<Billings_menu />} />
+        <Route path="/WalletsMenu-name" element={<Billings_change_money />} />
+        <Route path="/WalletsMenu-name2" element={<Main />} />
+      </Routes>
     </BrowserRouter>
   );
 }
