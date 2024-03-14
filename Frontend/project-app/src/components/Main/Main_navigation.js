@@ -1,5 +1,5 @@
 import React from 'react';
-import 'D:/Transaction-Project/Frontend/project-app/src/reset.css';
+import './reset.css';
 import "./Main.css";
 import Main_click_button from './Main_click_button';
 import { Link } from 'react-router-dom'; 

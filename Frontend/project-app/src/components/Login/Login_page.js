@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import 'D:/Transaction-Project/Frontend/project-app/src/reset.css';
+import './reset.css';
+
 import { Link } from 'react-router-dom'; 
 import './Login_page.css' 
 import { Router ,Routes, Route, BrowserRouter } from 'react-router-dom'; 

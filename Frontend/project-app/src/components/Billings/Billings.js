@@ -1,9 +1,10 @@
 import React from 'react';
-import 'D:/Transaction-Project/Frontend/project-app/src/reset.css';
+import './reset.css';
 import { Link } from 'react-router-dom'; 
 import { Router ,Routes, Route } from 'react-router-dom'; 
 import { BrowserRouter } from 'react-router-dom';
 import './Billings.css'
+
 
 function Billings(props) {
   return (

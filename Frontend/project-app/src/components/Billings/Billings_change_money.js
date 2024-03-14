@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import 'D:/Transaction-Project/Frontend/project-app/src/reset.css';
+import './reset.css';
 import { Link } from 'react-router-dom'; 
 import './Billings_change_money.css'
 import Billings_menu from './Billings_menu';

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import 'D:/Transaction-Project/Frontend/project-app/src/reset.css';
+import './reset.css';
 import "./Main.css";
 import Billings_menu from '../Billings/Billings_menu';
 import Main_click_button from './Main_click_button';
@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import Main_choose_categaries from './Main_choose_categaries';
 import { Router ,Routes, Route } from 'react-router-dom'; 
 import { BrowserRouter } from 'react-router-dom';
+
 
 function Main() {
 

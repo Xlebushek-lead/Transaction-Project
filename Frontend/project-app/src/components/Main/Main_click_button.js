@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './reset.css';
 import "./Main_click_button.css";
 
 function Main_click_button() {
