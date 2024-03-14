@@ -1,5 +1,5 @@
 import React from 'react';
-import '/Web/WEB-PROJECT/Transaction-Project-2/Frontend/project-app/src/reset.css';
+import 'D:/Transaction-Project/Frontend/project-app/src/reset.css';
 import { Link } from 'react-router-dom'; 
 import { Router ,Routes, Route } from 'react-router-dom'; 
 import { BrowserRouter } from 'react-router-dom';
