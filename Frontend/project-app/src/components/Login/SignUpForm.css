@@ -1,0 +1,29 @@
+.signup-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.Form{  
+    border: 2px solid teal;
+    padding: 30px;
+}
+.title {
+    font: 400 22px 'Arial';
+    margin-bottom: 10px;
+}
+.form-group{
+    font: 400 16px 'Arial';
+    margin-bottom: 10px;
+}
+.LogintoMain_button{
+    font: 400 14px 'Arial';
+    margin-bottom: 10px;
+    padding: 3px 5px
+}
+.SignPage_text{
+    text-decoration: none;
+}
+.LogintoMain_block{
+    margin-bottom: 10px;
+}

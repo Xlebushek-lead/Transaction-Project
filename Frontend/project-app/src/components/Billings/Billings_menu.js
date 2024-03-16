@@ -5,7 +5,7 @@ import { Router ,Routes, Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './Billings_menu.css'
 import Billings_change_money from './Billings_change_money';
-
+import BillingsMenu_cost from './BillingsMenu_cost';
 
 function Billings_menu(props) {
 
@@ -26,14 +26,8 @@ function Billings_menu(props) {
                 <div>4545$</div>
             </div>
             <div className='BillingsMenu-categoreis_container'>
-                <div className='BillingsMenu-categoreis_block'>
-                    <div>Транспорт</div>
-                    <div>454$</div>
-                </div>
-                <div className='BillingsMenu-categoreis_block'>
-                    <div>Продукти</div>
-                    <div>254$</div>
-                </div>
+                <BillingsMenu_cost/>
+                <BillingsMenu_cost/>
             </div>
         </div>
       </div>

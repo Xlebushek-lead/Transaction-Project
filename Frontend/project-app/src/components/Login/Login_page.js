@@ -36,8 +36,8 @@ function LoginPage() {
 
     return (
         <div className="login-container">
-            <h2>Login</h2>
-            <form onSubmit={handleSubmit}>
+            <form className='Form' onSubmit={handleSubmit}>
+                <h2 className='title'>Login</h2>
                 <div className="form-group">
                     <label htmlFor="username">Username:</label>
                     <input
@@ -48,7 +48,7 @@ function LoginPage() {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="password">Password:</label>
+                    <label htmlFor="password">Password: </label>
                     <input
                         type="password"
                         id="password"
@@ -62,13 +62,18 @@ function LoginPage() {
                     </div>
                 )}
                 {/* Перемістіть посилання поза кнопку */}
-                <Link to={isFilled ? '/other' : ''} className='LogintoMain'>
-                    <button type="submit" disabled={!isFilled}>
-                        Login
-                    </button>
-                </Link>
+                <div className='LogintoMain_block'>
+                    <Link to={isFilled ? '/other' : ''} className='LogintoMain'>
+                        <button className='LogintoMain_button' type="submit" disabled={!isFilled}>
+                            Login
+                        </button>
+                    </Link>
+                </div>
+                <div className='SignPage_block'>
+                    <Link className='SignPage_text' to="/SignPage">Don't have an account? Sign up here</Link>
+                    </div>
             </form>
-            <Link to="/SignPage">Don't have an account? Sign up here</Link>
+            
         </div>
     );
 }

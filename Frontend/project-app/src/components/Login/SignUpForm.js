@@ -81,8 +81,8 @@ function SignUpFormComponent() {
 
     return (
         <div className="signup-container">
-            <h2>Sign Up</h2>
-            <form onSubmit={handleSubmit}>
+            <form className='Form' onSubmit={handleSubmit}>
+                <h2 className='title'>Sign Up</h2>
                 <div className="form-group">
                     <label htmlFor="username">Username:</label>
                     <input
@@ -144,11 +144,18 @@ function SignUpFormComponent() {
                         </div>
                     )}
                 </div>
-                <button type="submit">
-                    Sign Up
-                </button>
+                <div className='LogintoMain_block'>
+                    <button type="submit">
+                        Sign Up
+                    </button>
+                </div>
+                    
+                <div className='SignPage_block'>
+                    <Link to="/">Already have an account? Log in here</Link>
+                </div>
+
             </form>
-            <Link to="/">Already have an account? Log in here</Link>
+            
         </div>
     );
 }
