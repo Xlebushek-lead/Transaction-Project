@@ -1,0 +1,29 @@
+.analytics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.balance-chart-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.transaction-history {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.transaction-history h2 {
+  font-weight: bold;
+  font-size: 1.5 rem;
+}
+
+.transaction-history ul {
+  font-size: 1.0 rem;
+}
+
+.show-all-transactions {
+  margin-top: 10px;
+}
