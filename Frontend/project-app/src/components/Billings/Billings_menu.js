@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './reset.css';
 import { Link } from 'react-router-dom'; 
-import { Router ,Routes, Route } from 'react-router-dom'; 
-import { BrowserRouter } from 'react-router-dom';
 import './Billings_menu.css'
 import Billings_change_money from './Billings_change_money';
 import BillingsMenu_cost from './BillingsMenu_cost';
 
 function Billings_menu(props) {
-
   
   return (
     <div className="BillingsMenu-container">
@@ -23,12 +20,11 @@ function Billings_menu(props) {
         <div className='BillingsMenu-cost_block'>
             <div className='BillingsMenu-cost_title'>
                 <div>Сьогодні</div>
-                <div>4545$</div>
+                <div>{props.selectedValueMain}</div> {/* Display entered amount */}
             </div>
             <div className='BillingsMenu-categoreis_container'>
-
+                <div>{props.selectedValue}</div> {/* Display selected category */}
                 <BillingsMenu_cost/>
-                
             </div>
         </div>
       </div>
