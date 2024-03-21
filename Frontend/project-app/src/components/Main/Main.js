@@ -1,4 +1,3 @@
-// Main.js
 import React, { useState } from 'react';
 import './reset.css';
 import "./Main.css";
@@ -8,35 +7,28 @@ import Main_click_button from './Main_click_button';
 import Main_navigation from './Main_navigation'
 import { Link } from 'react-router-dom'; 
 import Main_choose_categaries from './Main_choose_categaries';
-import { Router ,Routes, Route } from 'react-router-dom'; 
 import { BrowserRouter } from 'react-router-dom';
-import Billings from '../Billings/Billings';
 
 function Main(props) {
   const [selectedValueMain, setSelectedValueMain] = useState('');
-  function addmoney(){
-    setSelectedValueMain(selectedValueMain)
-  }
+  const [selectedValue, setSelectedValue] = useState('');
+
   const handleChange = (event) => {
     setSelectedValueMain(event.target.value); 
   }
-  const [selectedValue, setSelectedValue] = useState('');
-  function chooseCatgr(){
-    setSelectedValue(selectedValue)
-  }
+
   const selectChange = (event) => {
     setSelectedValue(event.target.value); 
   }
-
 
   return (
     <div className="Main-container">
       <Main_navigation/>
       <div className="Main-block2">
         <Main_click_button/>
-        <div className="Main-money__block">
-          <p className='Main-money__dolar'>$</p>
-          <input onChange={handleChange} value={selectedValueMain}   className="Main-money__text"  type="text" ></input>
+        <div className="Main-moneyblock">
+          <p className='Main-moneydolar'>$</p>
+          <input onChange={handleChange} value={selectedValueMain}   className="Main-moneytext"  type="text" ></input>
           <select value={selectedValue} onChange={selectChange}  className='categaries_block'>
                 <option value='option1'> Транспорт </option>
                 <option value='option2'> Продукти </option>
@@ -46,12 +38,12 @@ function Main(props) {
             </select>
         </div>
         <div className='Main-sendMoney'>
-          <Link to='/second-page' className='Main-sendMoney__text'> Add money </Link>      
+          <button className='Main-sendMoneytext'> Add money </button>
         </div>
       </div>
-      
-      <Billings_menu  />
-    
+
+      <Billings_menu selectedValueMain={selectedValueMain} selectedValue={selectedValue} />
+
     </div>
   );
 }

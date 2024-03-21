@@ -16,7 +16,6 @@ function App() {
         {/* <Route path="/" element={<LoginPage />} />
         <Route path="/SignPage" element={<SignUpFormComponent />} /> */}
         <Route path="/" element={<Main/>} />
-        <Route path="/second-page" element={<Main_choose_categaries />} />
         <Route path="/other" element={<Main />} />
         <Route path="/billing-nav" element={<Billings />} />
         <Route path="/Wallets-name" element={<Billings_menu />} />
