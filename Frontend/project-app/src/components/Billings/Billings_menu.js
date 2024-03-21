@@ -26,8 +26,9 @@ function Billings_menu(props) {
                 <div>4545$</div>
             </div>
             <div className='BillingsMenu-categoreis_container'>
+
                 <BillingsMenu_cost/>
-                <BillingsMenu_cost/>
+                
             </div>
         </div>
       </div>

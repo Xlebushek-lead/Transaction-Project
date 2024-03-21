@@ -12,9 +12,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/SignPage" element={<SignUpFormComponent />} />
-        <Route path="/other" element={<Main />} />
+        {/* <Route path="/" element={<LoginPage />} />
+        <Route path="/SignPage" element={<SignUpFormComponent />} /> */}
+        <Route path="/" element={<Main/>} />
         <Route path="/second-page" element={<Main_choose_categaries />} />
         <Route path="/other" element={<Main />} />
 

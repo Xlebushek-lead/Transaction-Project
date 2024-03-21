@@ -17,9 +17,8 @@
     text-align: center;
 }
 .categaries_block{
+    margin-bottom: 20px;
     display: flex;
-    list-style: none;
-    width: auto;
 }
 
 .categaries_block li{

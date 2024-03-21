@@ -33,7 +33,7 @@ function Billings_change_money() {
                         <button onClick={handleClick} className='Billings_change_money-button'>Змінити</button>
                     </div>
                 </div>
-                {false &&<Billings_menu balance={displayValue} />}
+                {false &&<Billings_menu balance={displayValue}  />}
             </div>
         </div>
     );

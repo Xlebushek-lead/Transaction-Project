@@ -5,21 +5,29 @@ import Main_click_button from './Main_click_button';
 import { Link } from 'react-router-dom';
 
 
-function Main_choose_categaries() {
-  
+function Main_choose_categaries(props) {
+  const [selectedValue, setSelectedValue] = useState('');
+  function chooseCatgr(){
+    setSelectedValue(selectedValue)
+  }
+  const selectChange = (event) => {
+    setSelectedValue(event.target.value); 
+  }
   return (
     <div className='alert_menu'>
         
         <div className='categaries'>
-            <p className='Title'>Вибрати</p>
-            <ol className='categaries_block'>
-                <li><Link  to='/other' className='Maxin-sendMoney__text'> Транспорт </Link></li>
-                <li><Link  to='/other' className='Maxin-sendMoney__text'> Продукти </Link></li>
-                <li><Link  to='/other' className='Maxin-sendMoney__text'> Платежі </Link></li>
-                <li><Link  to='/other' className='Maxin-sendMoney__text'> Розваги </Link></li>
-                <li><Link  to='/other' className='Maxin-sendMoney__text'> Інше </Link></li>
-            </ol>
+            <p className='Title'>Вибрати категорію</p>
+            <select value={selectedValue} onChange={selectChange}  className='categaries_block'>
+                <option value='option1'> Транспорт </option>
+                <option value='option2'> Продукти </option>
+                <option value='option3'> Платежі </option>
+                <option value='option4'> Розваги </option>
+                <option value='option5'> Інше </option>
+            </select>
+            <button onChange={chooseCatgr} className='categaries_button'><Link  to='/other' className='Maxin-sendMoney__text'> Додати витрату </Link></button>
         </div>
+        {false &&<BillingsMenu_cost categoria={selectedValue}  />}
     </div>
     
   );

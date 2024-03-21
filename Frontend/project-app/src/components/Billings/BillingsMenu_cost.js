@@ -6,12 +6,20 @@ import { Router ,Routes, Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 
 
-function BillingsMenu_cost() {
-
+function BillingsMenu_cost(props) {
+  const [productValue, setproductValue] = useState('Продукти'); 
+  const [moneyValue, setmoneyValue] = useState('254'); 
+  const changeCateraria = () => {
+    setproductValue(inputValue);
+  }
+const changeMoney = () => {
+  setmoneyValue(inputValue);
+  
+}
   return (
     <div className='BillingsMenu-categoreis_block'>
-        <div>Продукти</div>
-        <div>254$</div>
+        <div>{productValue}</div>
+        <div>{moneyValue}$</div>
     </div>
      
   );
