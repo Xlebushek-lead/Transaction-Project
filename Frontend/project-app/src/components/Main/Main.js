@@ -20,6 +20,13 @@ function Main(props) {
   const handleChange = (event) => {
     setSelectedValueMain(event.target.value); 
   }
+  const [selectedValue, setSelectedValue] = useState('');
+  function chooseCatgr(){
+    setSelectedValue(selectedValue)
+  }
+  const selectChange = (event) => {
+    setSelectedValue(event.target.value); 
+  }
 
 
   return (
@@ -30,6 +37,13 @@ function Main(props) {
         <div className="Main-money__block">
           <p className='Main-money__dolar'>$</p>
           <input onChange={handleChange} value={selectedValueMain}   className="Main-money__text"  type="text" ></input>
+          <select value={selectedValue} onChange={selectChange}  className='categaries_block'>
+                <option value='option1'> Транспорт </option>
+                <option value='option2'> Продукти </option>
+                <option value='option3'> Платежі </option>
+                <option value='option4'> Розваги </option>
+                <option value='option5'> Інше </option>
+            </select>
         </div>
         <div className='Main-sendMoney'>
           <Link to='/second-page' className='Main-sendMoney__text'> Add money </Link>      
