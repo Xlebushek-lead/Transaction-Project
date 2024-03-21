@@ -18,7 +18,7 @@ const changeMoney = () => {
 }
   return (
     <div className='BillingsMenu-categoreis_block'>
-        <div>{categoria}</div>
+        <div>{productValue}</div>
         <div>{moneyValue}$</div>
     </div>
      

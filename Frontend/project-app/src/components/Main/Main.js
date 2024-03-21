@@ -1,3 +1,4 @@
+// Main.js
 import React, { useState } from 'react';
 import './reset.css';
 import "./Main.css";
@@ -26,9 +27,9 @@ function Main(props) {
       <Main_navigation/>
       <div className="Main-block2">
         <Main_click_button/>
-        <div className="Main-moneyblock">
-          <p className='Main-moneydolar'>$</p>
-          <input onChange={handleChange} value={selectedValueMain}   className="Main-moneytext"  type="text" ></input>
+        <div className="Main-money__block">
+          <p className='Main-money__dolar'>$</p>
+          <input onChange={handleChange} value={selectedValueMain}   className="Main-money__text"  type="text" ></input>
           <select value={selectedValue} onChange={selectChange}  className='categaries_block'>
                 <option value='option1'> Транспорт </option>
                 <option value='option2'> Продукти </option>
@@ -38,12 +39,12 @@ function Main(props) {
             </select>
         </div>
         <div className='Main-sendMoney'>
-          <button className='Main-sendMoneytext'> Add money </button>
+          <button className='Main-sendMoney__text'> Add money </button>      
         </div>
       </div>
-
+      
       <Billings_menu selectedValueMain={selectedValueMain} selectedValue={selectedValue} />
-
+    
     </div>
   );
 }
