@@ -11,7 +11,7 @@ function Main_navigation() {
   return (
     <div className="Main-block1"> 
         <div className="Main-nav"><Link to='/billing-nav' className='Main-sendMoney__text'>Рахунки</Link></div>
-        <div className="Main-nav"><Link to='/analitics-nav' className='Main-sendMoney__text'>Аналітика</Link></div>
+        <div className="Main-nav"><Link to='/AnaliticsPage' className='Main-sendMoney__text'>Аналітика</Link></div>
         <div className="Main-nav"><Link to='/setting-nav' className='Main-sendMoney__text'>Налаштування</Link></div>
     </div>
   );

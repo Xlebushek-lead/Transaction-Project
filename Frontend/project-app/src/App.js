@@ -7,6 +7,7 @@ import Billings from './components/Billings/Billings';
 import Billings_change_money from './components/Billings/Billings_change_money';
 import LoginPage from './components/Login/Login_page'; 
 import SignUpFormComponent from './components/Login/SignUpForm'; 
+import AnaliticsPage from './components/Analitics/AnaliticsPage'; // Змінено імпорт
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Wallets-name" element={<Billings_menu />} />
         <Route path="/WalletsMenu-name" element={<Billings_change_money />} />
         <Route path="/WalletsMenu-name2" element={<Main />} />
+        <Route path="/AnaliticsPage" element={<AnaliticsPage />} /> 
       </Routes>
       {/*Main path =  /other */}
     </BrowserRouter>
