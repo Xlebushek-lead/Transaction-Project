@@ -4,22 +4,23 @@ import Billings_menu from '../Billings/Billings_menu';
 import { Link } from 'react-router-dom'; 
 import { Router ,Routes, Route } from 'react-router-dom'; 
 import { BrowserRouter } from 'react-router-dom';
+import Main from '../Main/Main';
 
 
 function BillingsMenu_cost(props) {
-  const [productValue, setproductValue] = useState('Продукти'); 
-  const [moneyValue, setmoneyValue] = useState('254'); 
-  const changeCateraria = () => {
-    setproductValue(inputValue);
-  }
-const changeMoney = () => {
-  setmoneyValue(inputValue);
-  
-}
+    const addDiv = () => {
+      // Створення нового div
+      const newDivBlock = document.querySelector('.BillingsMenu-categoreis_block');
+      const newDiv1 = document.createElement('div');
+      const newDiv2 = document.createElement('div');
+      newDiv1.innerHTML = props.a; 
+      newDiv2.innerHTML = props.q; 
+      newDivBlock.appendChild(newDiv1);
+      newDivBlock.appendChild(newDiv2);
+    };   
   return (
     <div className='BillingsMenu-categoreis_block'>
-        <div>{productValue}</div>
-        <div>{moneyValue}$</div>
+        <Main addDiv={addDiv}/>
     </div>
      
   );

@@ -21,11 +21,12 @@ function Billings_menu(props) {
         <div className='BillingsMenu-cost_block'>
             <div className='BillingsMenu-cost_title'>
                 <div>Сьогодні</div>
-                <div>{props.selectedValueMain}</div> {/* Display entered amount */}
+                <div>{2422}</div> {/* Display entered amount */}
             </div>
             <div className='BillingsMenu-categoreis_container'>
-                <div>{props.selectedValue}</div> {/* Display selected category */}
-                <BillingsMenu_cost/>
+                {/* <div>{props.selectedValueMain}</div> 
+                <div>{props.imputValueMain}</div>  */}
+                <BillingsMenu_cost a={props.a} q={props.q}/>
             </div>
         </div>
       </div>
